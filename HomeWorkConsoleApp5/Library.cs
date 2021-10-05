@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace HomeWorkConsoleApp5
 {
-    public class MathLibrary
+    public class Library
     {
-        #region Work3
+        #region Matrix
 
         public static int[][] MatrixCreate(int rows, int cols)
         {
@@ -30,7 +30,7 @@ namespace HomeWorkConsoleApp5
         }
 
         /// <summary>
-        /// умножение матрицы на число
+        /// Умножение матрицы на число
         /// </summary>
         /// <param name="matrix"></param>
         /// <param name="number"></param>
