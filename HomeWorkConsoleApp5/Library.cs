@@ -8,14 +8,14 @@ namespace HomeWorkConsoleApp5
         #region TextMethod
 
         public string[] TextToWords(string text) {
-            return text.Split(' ',2, StringSplitOptions.RemoveEmptyEntries);
+            return text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         }
 
         #endregion
 
         #region Matrix
 
-        public static int[][] MatrixCreate(int rows, int cols)
+        public int[][] MatrixCreate(int rows, int cols)
         {
             // Создаем матрицу, полностью инициализированную
             // значениями 0.0. Проверка входных параметров опущена.
@@ -25,7 +25,7 @@ namespace HomeWorkConsoleApp5
             return result;
         }
 
-        public static int[][] MatrixRandom(int rows, int cols, int minVal, int maxVal)
+        public int[][] MatrixRandom(int rows, int cols, int minVal, int maxVal)
         {
             // Возвращаем матрицу со значениями
             // в диапазоне от minVal до maxVal
@@ -111,7 +111,7 @@ namespace HomeWorkConsoleApp5
         /// Печать матриц
         /// </summary>
         /// <param name="matrix"></param>
-        public static void PrintMatrix(int[][] matrix)
+        public void PrintMatrix(int[][] matrix)
         {
             foreach (var itemX in matrix)
             {
