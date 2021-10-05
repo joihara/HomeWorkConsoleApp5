@@ -5,6 +5,14 @@ namespace HomeWorkConsoleApp5
 {
     public class Library
     {
+        #region TextMethod
+
+        public string[] TextToWords(string text) {
+            return text.Split(' ',2, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        #endregion
+
         #region Matrix
 
         public static int[][] MatrixCreate(int rows, int cols)
